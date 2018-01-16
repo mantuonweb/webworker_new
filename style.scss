@@ -1,0 +1,79 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+*:before, *:after {
+  content: '';
+  clear: both;
+}
+
+.blocking {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+  text-align: center;
+  
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    text-align: center;
+    
+    input {
+      width: 10ch;
+      padding: 0.3em;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      background: transparent;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1em;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  
+  button {
+    display: inline-block;
+    margin: 2em 0 3em 0;
+    padding: 1em 2em;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background: transparent;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.5);
+    
+    transition: all 0.3s ease-out;
+    
+    &:hover {
+      outline: none;
+      border-color: #000064;
+      color: rgba(0, 0, 0, 0.8);
+    }
+    
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .prime {
+    display: inline-block;
+    margin: 0.5em;
+    width: 3em;
+    height: 3em;
+    background-color: #000064;
+    line-height: 3em;
+    color: white;
+    border-radius: 3em;
+  }
+}
